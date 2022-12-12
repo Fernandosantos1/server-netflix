@@ -1,0 +1,12 @@
+version: '3.9'
+services:
+  db:
+    image: postgres
+    container_name: server_netflix_postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD : Teste123
+      POSTGRES_DB : netflix
+    ports:
+      - '5432:5432'
+
